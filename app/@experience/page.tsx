@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import { EDUCATION_DATA, EXPERIENCE_DATA } from "@/lib/data";
 import Section from "@/components/section";
 import SectionHeading from "@/components/section-heading";
-import { FaGraduationCap } from "react-icons/fa6";
-import { MdWorkHistory } from "react-icons/md";
+import { LiaGraduationCapSolid } from "react-icons/lia";
+import { LiaAwardSolid } from "react-icons/lia";
 import { FaCalendarAlt } from "react-icons/fa";
 import { useTheme } from "@/context/theme-context";
 
@@ -21,7 +21,7 @@ export default function ExperienceSection() {
           secondaryText="Journey"
           shadowText="Experience"
         />
-        <div className="flex flex-col md:flex-row justify-between gap-10">
+        <div className="space-y-20">
           <div className="flex-1 space-y-10">
             <motion.div
               initial={{ x: -50, opacity: 0 }}
@@ -34,7 +34,7 @@ export default function ExperienceSection() {
               }}
               viewport={{ once: true }}
               className="flex items-center gap-5">
-              <FaGraduationCap className="text-secondary text-6xl" />{" "}
+              <LiaGraduationCapSolid className="text-secondary text-6xl" />{" "}
               <h3 className="text-3xl font-bold">Education</h3>
             </motion.div>
             <div className="px-4 space-y-8">
@@ -53,7 +53,7 @@ export default function ExperienceSection() {
               }}
               viewport={{ once: true }}
               className="flex items-center gap-5">
-              <MdWorkHistory className="text-secondary text-6xl" />{" "}
+              <LiaAwardSolid className="text-secondary text-6xl" />{" "}
               <h3 className="text-3xl font-bold">Experiences</h3>
             </motion.div>
             <div className="px-4 space-y-8">
@@ -79,23 +79,30 @@ const template = (item: any, i: number, theme: any) => {
         },
       }}
       viewport={{ once: true }}
-      key={item.title}
-      className="flex items-start gap-10">
-      <div className="p-2 flex flex-col items-center gap-[5px]">
-        <div className="rounded-full h-4 w-4 bg-secondary ring-offset-4 ring-1 animate-bounce"></div>
-        <div className="h-16 w-[1px] bg-secondary/50 rounded-full"></div>
-      </div>
+      key={i}
+      className="flex items-start gap-6">
+      <div className="mt-2 rounded-full h-4 w-4 bg-secondary ring-offset-4 ring-1 animate-bounce"></div>
       <div className="flex-1">
-        <h4 className="text-2xl font-bold line-clamp-1">{item.title}</h4>
+        <h4 className="text-2xl font-bold">{item.title}</h4>
         <h5
-          className={`text-lg font-bold line-clamp-1 ${
+          className={`text-lg italic font-medium ${
             theme === "light" ? "text-primary/70" : "text-blue-50/70"
           }`}>
           {item.subTitle}
         </h5>
         <div className="text-sm font-medium text-secondary flex items-center gap-2 mt-4">
-          <FaCalendarAlt /> {item.date}
+          <FaCalendarAlt /> <span className="italic">{item.date}</span>
         </div>
+        {item.taskList && (
+          <div className="space-y-3 mt-4">
+            <p className="italic text-sm font-medium text-secondary">Tasks:</p>
+            <ul className="space-y-2 list-disc pl-5">
+              {item.taskList.map((task: any, i: number) => (
+                <li key={i}>{task}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </motion.div>
   );

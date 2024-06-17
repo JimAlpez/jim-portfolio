@@ -20,7 +20,7 @@ export default function ContactSection() {
   const { theme } = useTheme();
 
   return (
-    <div className="pb-12">
+    <div className="pb-12 max-w-[800px] mx-auto mt-20">
       <Section sectionView="Contact" id="contact">
         <div
           className={`overflow-hidden mx-4 px-8 py-10 lg:px-12 lg:py-20 rounded-xl shadow-lg border-t-2 ${
@@ -34,94 +34,6 @@ export default function ContactSection() {
             shadowText="Contact"
           />
           <div className="flex flex-col md:flex-row items-start gap-x-20 gap-y-10">
-            <div className="space-y-8 py-3">
-              <motion.div
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{
-                  y: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.4,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="space-y-1">
-                <h5 className="text-3xl font-bold uppercase drop-shadow-md">
-                  Contact info
-                </h5>
-                <p className="text-sm italic font-semibold">
-                  Got a project? Let&apos;s talk
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.4,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="flex items-start gap-4">
-                <TbMessage2Check className="text-2xl text-secondary" />
-                <div>
-                  <p className="text-sm text-secondary font-medium">
-                    Talk to me:
-                  </p>
-                  <a
-                    href="skype:jim.alpez06@gmail.com?call"
-                    className="font-bold">
-                    jim.alpez06@gmail.com
-                  </a>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.4,
-                    delay: 0.2,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="flex items-start gap-4">
-                <TbPhone className="text-2xl text-secondary" />
-                <div>
-                  <p className="text-sm text-secondary font-medium">Call me:</p>
-                  <a href="skype:+639760888072?call" className="font-bold">
-                    +639 760 888 072
-                  </a>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.4,
-                    delay: 0.3,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="flex items-start gap-4">
-                <GrMapLocation className="text-2xl text-secondary" />
-                <div>
-                  <p className="text-sm text-secondary font-medium">Address:</p>
-                  <a
-                    href="https://maps.app.goo.gl/w3DZfhNNLecaZSWd6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-bold">
-                    Calbayog City, Samar,
-                    <br /> Philippines
-                  </a>
-                </div>
-              </motion.div>
-            </div>
             <div className="flex-1 w-full">
               <form
                 action={async (formData) => {
@@ -221,6 +133,92 @@ export default function ContactSection() {
                 </motion.div>
                 <SubmitBtn />
               </form>
+            </div>
+            <div className="space-y-8 py-3">
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.4,
+                  },
+                }}
+                viewport={{ once: true }}
+                className="space-y-1">
+                <h5 className="text-3xl font-bold uppercase drop-shadow-md">
+                  Contact info
+                </h5>
+                <p className="text-sm italic">
+                  Got a project? Let&apos;s talk
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.4,
+                  },
+                }}
+                viewport={{ once: true }}
+                className="flex items-start gap-4">
+                <TbMessage2Check className="text-2xl text-secondary" />
+                <div>
+                  <p className="text-sm text-secondary font-medium">
+                    Talk to me:
+                  </p>
+                  <a href="mailto:jim.alpez06@gmail.com" className="font-bold">
+                    jim.alpez06@gmail.com
+                  </a>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.4,
+                    delay: 0.2,
+                  },
+                }}
+                viewport={{ once: true }}
+                className="flex items-start gap-4">
+                <TbPhone className="text-2xl text-secondary" />
+                <div>
+                  <p className="text-sm text-secondary font-medium">Call me:</p>
+                  <a href="tel:+639760888072" className="font-bold">
+                    +63 976 088 8072
+                  </a>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.4,
+                    delay: 0.3,
+                  },
+                }}
+                viewport={{ once: true }}
+                className="flex items-start gap-4">
+                <GrMapLocation className="text-2xl text-secondary" />
+                <div>
+                  <p className="text-sm text-secondary font-medium">Address:</p>
+                  <a
+                    href="https://maps.app.goo.gl/w3DZfhNNLecaZSWd6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold">
+                    Calbayog City, Samar,
+                    <br /> Philippines
+                  </a>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>

@@ -78,7 +78,7 @@ export default function AboutSection() {
               </div>
               <div className="text-secondary font-medium flex flex-col gap-3">
                 <span>Jim Alpez</span>
-                <span>+639 760 888 072</span>
+                <span>+63 976 088 8072</span>
                 <span>jim.alpez06@gmail.com</span>
               </div>
             </motion.div>
@@ -130,17 +130,11 @@ export default function AboutSection() {
                 },
               }}
               viewport={{ once: true }}
-              whileHover={{
-                scale: 1.1,
-              }}
-              whileTap={{
-                scale: 1,
-              }}
               className="group w-fit">
               <a
                 href="CV.pdf"
                 download
-                className={`hover:shadow-lg hover:bg-secondary hover:text-blue-50 font-medium px-6 py-3 rounded flex items-center gap-2 ${
+                className={`hover:scale-110 focus:scale-100 hover:shadow-lg hover:bg-secondary hover:text-blue-50 transition-all font-medium px-6 py-3 rounded flex items-center gap-2 ${
                   theme === "light"
                     ? "bg-primary text-blue-50"
                     : "bg-blue-50 text-primary"

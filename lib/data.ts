@@ -18,7 +18,7 @@ import { IoExtensionPuzzleOutline } from "react-icons/io5";
 import { MdElectricBolt } from "react-icons/md";
 
 // Projects
-import Portfolio from "@/public/Projects/Portfolio.png";
+import ProjectImage1 from "@/public/Projects/Portfolio.png";
 
 export const links = [
   {
@@ -84,7 +84,7 @@ export const SKILLS_DATA = [
 
 export const EDUCATION_DATA = [
   {
-    title: "BS Computer Engineering",
+    title: "Bachelor of Science in Computer Engineering",
     subTitle: "Northwest Samar State University",
     date: "2019 - 2023",
   },
@@ -92,14 +92,14 @@ export const EDUCATION_DATA = [
 
 export const EXPERIENCE_DATA = [
   {
-    title: "Frontend Website Developer",
-    subTitle: "Full Time",
-    date: "2023 - Now",
-  },
-  {
-    title: "Frontend Website Developer",
-    subTitle: "Part Time",
-    date: "2021 - 2023",
+    title: "Web Developer Intern",
+    subTitle: "Northwest Samar State University",
+    date: "05/2022 - 06/2022",
+    taskList: [
+      "Developed responsive web pages using HTML and CSS.",
+      "Created interactive features with jQuery, ensuring cross-browser compatibility.",
+      "Validated web forms using jQuery and processed submissions with PHP.",
+    ],
   },
 ] as const;
 
@@ -127,63 +127,8 @@ export const PROJECTS_DATA = [
     id: 1,
     title: "Title Here",
     link: "#",
-    image: Portfolio,
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non porro error dignissimos accusantium facilis qui nemo veritatis. Reiciendis, fuga libero officia magnam itaque inventore nisi maiores at saepe doloribus.",
-    tabs: ["All", "Wordpress"],
-  },
-  {
-    id: 2,
-    title: "Title Here",
-    link: "#",
-    image: Portfolio,
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non porro error dignissimos accusantium facilis qui nemo veritatis. Reiciendis, fuga libero officia magnam itaque inventore nisi maiores at saepe doloribus.",
-    tabs: ["All", "Wordpress"],
-  },
-  {
-    id: 3,
-    title: "Title Here",
-    link: "#",
-    image: Portfolio,
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non porro error dignissimos accusantium facilis qui nemo veritatis. Reiciendis, fuga libero officia magnam itaque inventore nisi maiores at saepe doloribus.",
-    tabs: ["All", "Wordpress"],
-  },
-  {
-    id: 4,
-    title: "Title Here",
-    link: "#",
-    image: Portfolio,
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non porro error dignissimos accusantium facilis qui nemo veritatis. Reiciendis, fuga libero officia magnam itaque inventore nisi maiores at saepe doloribus.",
-    tabs: ["All", "Wordpress"],
-  },
-  {
-    id: 5,
-    title: "Title Here",
-    link: "#",
-    image: Portfolio,
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non porro error dignissimos accusantium facilis qui nemo veritatis. Reiciendis, fuga libero officia magnam itaque inventore nisi maiores at saepe doloribus.",
-    tabs: ["All", "Wordpress"],
-  },
-  {
-    id: 6,
-    title: "Title Here",
-    link: "#",
-    image: Portfolio,
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non porro error dignissimos accusantium facilis qui nemo veritatis. Reiciendis, fuga libero officia magnam itaque inventore nisi maiores at saepe doloribus.",
-    tabs: ["All", "Wordpress"],
-  },
-  {
-    id: 7,
-    title: "Title Here",
-    link: "#",
-    image: Portfolio,
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non porro error dignissimos accusantium facilis qui nemo veritatis. Reiciendis, fuga libero officia magnam itaque inventore nisi maiores at saepe doloribus.",
-    tabs: ["All", "Wordpress"],
+    image: ProjectImage1,
+    content: "",
+    tabs: ["", ""],
   },
 ] as const;

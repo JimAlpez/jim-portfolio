@@ -15,7 +15,7 @@ export default function Project({ data, activeTab }: any) {
   return (
     <>
       {filteredData.length === 0 && (
-        <p className="text-center font-medium text-rose-500">No website yet.</p>
+        <p className="text-center italic">Coming soon...</p>
       )}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

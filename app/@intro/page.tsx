@@ -113,19 +113,14 @@ export default function IntroSection() {
                   delay: 1.9,
                 },
               }}
-              className="text-xl md:text-2xl lg:text-3xl font-semibold text-secondary">
-              {/* <Typewriter
+              className="text-xl md:text-2xl lg:text-3xl font-semibold">
+              <Typewriter
                 options={{
-                  strings: ["Wordpress Developer", "React (Next.js)"],
+                  strings: ["Website Developer", "Wordpress Developer", "React (Next.js) Developer"],
                   autoStart: true,
                   loop: true,
                 }}
-              /> */}
-              <span
-                className={theme === "light" ? "text-primary" : "text-blue-50"}>
-                Frontend
-              </span>{" "}
-              Web developer
+              />
             </motion.h3>
             <motion.p
               initial={{ y: 50, opacity: 0 }}
@@ -193,7 +188,7 @@ export default function IntroSection() {
                     setTimeOfLastClick(Date.now());
                   }}>
                   <AiOutlineMessage className="text-2xl animate-bounce group-hover:animate-none" />{" "}
-                  Get in touch
+                  Contact me
                 </Link>
               </motion.div>
             </div>
