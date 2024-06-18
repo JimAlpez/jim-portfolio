@@ -40,8 +40,8 @@ export default function ImageSlideshow() {
 
   return (
     <div
-      className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl border ${
-        theme === "light" ? "border-sky-950" : "border-blue-50"
+      className={`relative w-full h-full rounded-xl overflow-hidden shadow-lg border-2 border-secondary ${
+        theme === "light" ? "shadow-sky-900/20" : "shadow-blue-100/20"
       }`}>
       {images.map((image, index) => (
         <Image

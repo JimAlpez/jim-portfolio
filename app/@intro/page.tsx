@@ -8,7 +8,7 @@ import Typewriter from "typewriter-effect";
 import JimAlpez from "@/public/jim-alpez.png";
 import Background from "@/public/background-intro.jpg";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { AiOutlineMessage } from "react-icons/ai";
+import { MdOutlineMessage } from "react-icons/md";
 import { RiBlazeLine } from "react-icons/ri";
 import Section from "@/components/section";
 import { useTheme } from "@/context/theme-context";
@@ -175,10 +175,9 @@ export default function IntroSection() {
                   scale: 1,
                 }}
                 className="group w-fit relative">
-                <RiBlazeLine className="text-2xl absolute -top-5 -right-5 rotate-[30deg] animate-pulse group-hover:animate-none" />
                 <Link
                   href="#contact"
-                  className={`hover:shadow-lg hover:bg-secondary hover:text-blue-50 font-medium px-6 py-3 rounded flex items-center gap-2 ${
+                  className={`hover:shadow-lg hover:bg-secondary hover:text-blue-50 border-2 border-secondary font-medium px-5 py-3 rounded-full flex items-center gap-2 ${
                     theme === "light"
                       ? "text-blue-50 bg-primary"
                       : "text-primary bg-blue-50"
@@ -187,8 +186,8 @@ export default function IntroSection() {
                     setActiveSection("Contact");
                     setTimeOfLastClick(Date.now());
                   }}>
-                  <AiOutlineMessage className="text-2xl animate-bounce group-hover:animate-none" />{" "}
-                  Contact me
+                  Get in Touch
+                  <MdOutlineMessage className="text-2xl animate-bounce group-hover:animate-none" />{" "}
                 </Link>
               </motion.div>
             </div>

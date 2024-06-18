@@ -27,7 +27,7 @@ export default function SubmitBtn() {
       <button
         type="submit"
         disabled={pending}
-        className={`group transition-all font-medium px-5 py-2 rounded flex items-center gap-2 ${
+        className={`group transition-all font-medium border-2 border-secondary px-5 py-2 rounded-full flex items-center gap-2 ${
           theme === "light"
             ? "text-blue-50 bg-primary"
             : "text-primary bg-blue-50"

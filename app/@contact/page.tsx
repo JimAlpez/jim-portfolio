@@ -20,10 +20,10 @@ export default function ContactSection() {
   const { theme } = useTheme();
 
   return (
-    <div className="pb-12 max-w-[800px] mx-auto mt-20">
+    <div className="pb-12 max-w-[800px] mx-auto mt-16">
       <Section sectionView="Contact" id="contact">
         <div
-          className={`overflow-hidden mx-4 px-8 py-10 lg:px-12 lg:py-20 rounded-xl shadow-lg border-t-2 ${
+          className={`overflow-hidden mx-4 px-8 py-10 lg:px-12 lg:pt-16 rounded-xl shadow-lg border-t-2 ${
             theme === "light"
               ? "shadow-sky-900/20 border-sky-900/20"
               : "shadow-blue-100/20 border-blue-100/20"
@@ -33,7 +33,7 @@ export default function ContactSection() {
             secondaryText="Touch"
             shadowText="Contact"
           />
-          <div className="flex flex-col md:flex-row items-start gap-x-20 gap-y-10">
+          <div className="flex flex-col-reverse md:flex-row items-start gap-10">
             <div className="flex-1 w-full">
               <form
                 action={async (formData) => {
@@ -166,7 +166,7 @@ export default function ContactSection() {
                 className="flex items-start gap-4">
                 <TbMessage2Check className="text-2xl text-secondary" />
                 <div>
-                  <p className="text-sm text-secondary font-medium">
+                  <p className="text-sm text-secondary italic">
                     Talk to me:
                   </p>
                   <a href="mailto:jim.alpez06@gmail.com" className="font-bold">
@@ -188,7 +188,7 @@ export default function ContactSection() {
                 className="flex items-start gap-4">
                 <TbPhone className="text-2xl text-secondary" />
                 <div>
-                  <p className="text-sm text-secondary font-medium">Call me:</p>
+                  <p className="text-sm text-secondary italic">Call me:</p>
                   <a href="tel:+639760888072" className="font-bold">
                     +63 976 088 8072
                   </a>
@@ -208,7 +208,7 @@ export default function ContactSection() {
                 className="flex items-start gap-4">
                 <GrMapLocation className="text-2xl text-secondary" />
                 <div>
-                  <p className="text-sm text-secondary font-medium">Address:</p>
+                  <p className="text-sm text-secondary italic">Address:</p>
                   <a
                     href="https://maps.app.goo.gl/w3DZfhNNLecaZSWd6"
                     target="_blank"

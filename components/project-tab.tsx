@@ -8,7 +8,7 @@ export default function ProjectTab({ activeTab, setActiveTab }: any) {
   };
 
   return (
-    <div className="font-bold flex flex-wrap items-center justify-center gap-8">
+    <div className="text-sm flex flex-wrap items-center justify-center gap-8">
       <motion.div
         initial={{ x: 50, opacity: 0 }}
         whileInView={{
@@ -23,7 +23,7 @@ export default function ProjectTab({ activeTab, setActiveTab }: any) {
         <button
           onClick={() => handleTabClick("All")}
           className={`uppercase tracking-wide hover:text-secondary/70 ${
-            activeTab === "All" ? "text-secondary" : ""
+            activeTab === "All" ? "text-secondary font-bold" : ""
           }`}>
           All
         </button>
@@ -43,7 +43,7 @@ export default function ProjectTab({ activeTab, setActiveTab }: any) {
         <button
           onClick={() => handleTabClick("React")}
           className={`uppercase tracking-wide hover:text-secondary/70 ${
-            activeTab === "React" ? "text-secondary" : ""
+            activeTab === "React" ? "text-secondary font-bold" : ""
           }`}>
           React
         </button>
@@ -63,7 +63,7 @@ export default function ProjectTab({ activeTab, setActiveTab }: any) {
         <button
           onClick={() => handleTabClick("Wordpress")}
           className={`uppercase tracking-wide hover:text-secondary/70 ${
-            activeTab === "Wordpress" ? "text-secondary" : ""
+            activeTab === "Wordpress" ? "text-secondary font-bold" : ""
           }`}>
           Wordpress
         </button>

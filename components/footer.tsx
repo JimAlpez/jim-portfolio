@@ -13,18 +13,20 @@ export default function Footer() {
 
   return (
     <footer
-      className={`text-center pt-10 ${
-        theme === "light"
-          ? "text-primary bg-blue-50"
-          : "text-blue-50 bg-primary"
-      }`}>
+      className="text-center pt-10 bg-primary text-blue-50">
       <div className="w-full max-w-lg mx-auto px-4 py-10 space-y-12">
         <Link href="/" className="text-4xl font-bold">
           jim<span className="text-secondary">.dev</span>
         </Link>
 
-        <div>
-          <div className="text-2xl flex items-center justify-center pb-4">
+        <div className="space-y-6">
+          <p className="text-sm">
+            <span className="font-semibold">About this website:</span> built
+            with React & Next.js (App Router & Server Actions), TypeScript,
+            Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
+          </p>
+
+          <div className="text-2xl flex items-center justify-center">
             <motion.a
               whileHover={{
                 scale: 1.2,
@@ -71,12 +73,6 @@ export default function Footer() {
               <FaGithub />
             </motion.a>
           </div>
-
-          <p className="text-sm">
-            <span className="font-semibold">About this website:</span> built
-            with React & Next.js (App Router & Server Actions), TypeScript,
-            Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
-          </p>
         </div>
 
         <p className="text-xs">&copy; 2024 Jim. All rights reserved.</p>
