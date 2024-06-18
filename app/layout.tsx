@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Jim Alpez | Personal Portfolio",
-  description: "He is graduate under BS in Computer Engineering who is passionate about web development and is always determined to complete tasks with high-quality results. He is fast learner who is eager to take on new challenges and learn new ideas that will enhance his skills and lead to great opportunities.",
+  description: "He is a graduate under BS in Computer Engineering who is passionate about web development and is always determined to complete tasks with high-quality results. He is a fast learner, eager to take on new challenges and learn new ideas that will enhance his skills to contribute effectively to the company.",
 };
 
 type RootLayoutProps = {
