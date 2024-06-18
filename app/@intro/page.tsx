@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 
 import JimAlpez from "@/public/jim-alpez.png";
-import Background from "@/public/background-intro-2.jpg";
+import Background from "@/public/background-intro.jpg";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { MdOutlineMessage } from "react-icons/md";
 import { RiBlazeLine } from "react-icons/ri";
@@ -24,13 +24,13 @@ export default function IntroSection() {
           src={Background}
           alt="Intro Background"
           quality={95}
-          className="w-full h-full object-cover absolute top-0 left-0 right-0 bottom-0"></Image>
+          className="blur-sm w-full h-full object-cover absolute top-0 left-0 right-0 bottom-0"></Image>
 
         <div
           className={`absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br ${
             theme === "light"
-              ? "from-slate-100/90 via-slate-200/90 to-slate-300/90"
-              : "from-slate-600/90 via-slate-600/90 to-slate-800/90"
+              ? "from-slate-100/80 via-slate-200/80 to-slate-300/80"
+              : "from-slate-600/80 via-slate-600/80 to-slate-800/80"
           }`}></div>
 
         <div className="min-h-screen flex flex-col md:flex-row-reverse items-center justify-between gap-y-5 w-full max-w-5xl mx-auto">
