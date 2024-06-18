@@ -15,8 +15,8 @@ export default function Home() {
     <main
       className={
         theme === "light"
-          ? "text-primary bg-blue-50"
-          : "text-blue-50 bg-primary"
+          ? "text-primary bg-slate-50"
+          : "text-slate-50 bg-primary"
       }>
       <IntroSection />
       <AboutSection />

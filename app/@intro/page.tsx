@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 
 import JimAlpez from "@/public/jim-alpez.png";
-import Background from "@/public/background-intro.jpg";
+import Background from "@/public/background-intro-2.jpg";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { MdOutlineMessage } from "react-icons/md";
 import { RiBlazeLine } from "react-icons/ri";
@@ -29,8 +29,8 @@ export default function IntroSection() {
         <div
           className={`absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br ${
             theme === "light"
-              ? "from-blue-50/70 via-blue-100/70 to-blue-200/70"
-              : "from-sky-800/70 via-sky-900/70 to-sky-950/70"
+              ? "from-slate-100/90 via-slate-200/90 to-slate-300/90"
+              : "from-slate-600/90 via-slate-600/90 to-slate-800/90"
           }`}></div>
 
         <div className="min-h-screen flex flex-col md:flex-row-reverse items-center justify-between gap-y-5 w-full max-w-5xl mx-auto">
@@ -75,7 +75,7 @@ export default function IntroSection() {
                 className="text-xl md:text-2xl lg:text-3xl font-semibold flex items-center gap-2">
                 <span
                   className={`w-7 md:w-9 lg:w-12 h-[2px] rounded-full ${
-                    theme === "light" ? "bg-primary" : "bg-blue-50"
+                    theme === "light" ? "bg-primary" : "bg-slate-50"
                   }`}></span>{" "}
                 Hi!, I&apos;m
               </motion.span>{" "}
@@ -95,7 +95,7 @@ export default function IntroSection() {
                 <span className="text-stroke-secondary">Jim</span>{" "}
                 <span
                   className={
-                    theme === "light" ? "text-primary" : "text-blue-50"
+                    theme === "light" ? "text-primary" : "text-slate-50"
                   }>
                   Alpez
                 </span>
@@ -152,7 +152,7 @@ export default function IntroSection() {
                 },
               }}
               className={
-                theme === "light" ? "border-primary" : "border-blue-100"
+                theme === "light" ? "border-primary" : "border-slate-100"
               }
             />
             <div className="pt-5">
@@ -177,10 +177,10 @@ export default function IntroSection() {
                 className="group w-fit relative">
                 <Link
                   href="#contact"
-                  className={`hover:shadow-lg hover:bg-secondary hover:text-blue-50 border-2 border-secondary font-medium px-5 py-3 rounded-full flex items-center gap-2 ${
+                  className={`hover:shadow-lg hover:bg-secondary hover:text-slate-50 border-2 border-secondary font-medium px-5 py-3 rounded-full flex items-center gap-2 ${
                     theme === "light"
-                      ? "text-blue-50 bg-primary"
-                      : "text-primary bg-blue-50"
+                      ? "text-slate-50 bg-primary"
+                      : "text-primary bg-slate-50"
                   }`}
                   onClick={() => {
                     setActiveSection("Contact");

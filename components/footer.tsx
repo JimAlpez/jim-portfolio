@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="text-center pt-10 bg-primary text-blue-50">
+      className="text-center pt-10 bg-primary text-slate-50">
       <div className="w-full max-w-lg mx-auto px-4 py-10 space-y-12">
         <Link href="/" className="text-4xl font-bold">
           jim<span className="text-secondary">.dev</span>
@@ -38,7 +38,7 @@ export default function Footer() {
               href="https://www.facebook.com/JimAlpez/"
               target="_blank"
               className={`h-12 w-12 grid place-items-center rounded-full ${
-                theme === "light" ? "hover:text-primary" : "hover:text-blue-50"
+                theme === "light" ? "hover:text-primary" : "hover:text-slate-50"
               }`}>
               <FaFacebookF />
             </motion.a>
@@ -53,7 +53,7 @@ export default function Footer() {
               href="https://ph.linkedin.com/in/jim-alpez"
               target="_blank"
               className={`h-12 w-12 grid place-items-center rounded-full ${
-                theme === "light" ? "hover:text-primary" : "hover:text-blue-50"
+                theme === "light" ? "hover:text-primary" : "hover:text-slate-50"
               }`}>
               <FaLinkedinIn />
             </motion.a>
@@ -68,7 +68,7 @@ export default function Footer() {
               href="https://github.com/JimAlpez"
               target="_blank"
               className={`h-12 w-12 grid place-items-center rounded-full ${
-                theme === "light" ? "hover:text-primary" : "hover:text-blue-50"
+                theme === "light" ? "hover:text-primary" : "hover:text-slate-50"
               }`}>
               <FaGithub />
             </motion.a>

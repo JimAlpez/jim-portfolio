@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Jim Alpez | Personal Portfolio",
-  description: "Jim Alpez is a Frontend developer with 2 years of experience.",
+  description: "He is graduate under BS in Computer Engineering who is passionate about web development and is always determined to complete tasks with high-quality results. He is fast learner who is eager to take on new challenges and learn new ideas that will enhance his skills and lead to great opportunities.",
 };
 
 type RootLayoutProps = {

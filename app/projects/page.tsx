@@ -22,8 +22,8 @@ export default function ProjectPage() {
     <div
       className={
         theme === "light"
-          ? "text-primary bg-blue-50"
-          : "text-blue-50 bg-primary"
+          ? "text-primary bg-slate-50"
+          : "text-slate-50 bg-primary"
       }>
       <Section sectionView="Projects" id="projects">
         <div className="px-4 py-20">
@@ -57,7 +57,7 @@ export default function ProjectPage() {
                   target="_blank"
                   className={`group shadow-md relative overflow-hidden rounded-xl border bg-gradient-to-br ${
                     theme === "light"
-                      ? "shadow-black/10 from-blue-200/50 border-blue-100"
+                      ? "shadow-black/10 from-slate-200/50 border-slate-100"
                       : "shadow-white/10 from-sky-800/50 border-sky-900"
                   }`}>
                   <div className="h-60 w-full overflow-hidden shadow-md shadow-sky-900/20">
@@ -73,14 +73,14 @@ export default function ProjectPage() {
 
                   <div
                     className={`space-y-2 py-3 px-4 absolute bottom-0 md:bottom-[-42px] md:group-hover:bottom-0 transition-all duration-500 ease left-0 w-full ${
-                      theme === "light" ? "bg-blue-50" : "bg-primary"
+                      theme === "light" ? "bg-slate-50" : "bg-primary"
                     }`}>
                     <h3 className="font-bold line-clamp-1">{item.title}</h3>
                     <p
                       className={`text-xs line-clamp-2 ${
                         theme === "light"
                           ? "text-primary/60"
-                          : "text-blue-50/60"
+                          : "text-slate-50/60"
                       }`}>
                       {item.content}
                     </p>

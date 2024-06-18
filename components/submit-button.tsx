@@ -29,12 +29,12 @@ export default function SubmitBtn() {
         disabled={pending}
         className={`group transition-all font-medium border-2 border-secondary px-5 py-2 rounded-full flex items-center gap-2 ${
           theme === "light"
-            ? "text-blue-50 bg-primary"
-            : "text-primary bg-blue-50"
+            ? "text-slate-50 bg-primary"
+            : "text-primary bg-slate-50"
         } ${
           pending
             ? "text-opacity-50 bg-primary/70"
-            : "hover:scale-110 hover:shadow-lg hover:text-blue-50 hover:bg-secondary"
+            : "hover:scale-110 hover:shadow-lg hover:text-slate-50 hover:bg-secondary"
         }`}>
         Submit
         {pending ? (

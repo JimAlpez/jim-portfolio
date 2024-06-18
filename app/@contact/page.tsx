@@ -26,7 +26,7 @@ export default function ContactSection() {
           className={`overflow-hidden mx-4 px-8 py-10 lg:px-12 lg:pt-16 rounded-xl shadow-lg border-t-2 ${
             theme === "light"
               ? "shadow-sky-900/20 border-sky-900/20"
-              : "shadow-blue-100/20 border-blue-100/20"
+              : "shadow-slate-100/20 border-slate-100/20"
           }`}>
           <SectionHeading
             primaryText="Get in"
@@ -72,7 +72,7 @@ export default function ContactSection() {
                     className={
                       theme === "light"
                         ? "border-primary/30 focus:border-primary"
-                        : "border-blue-50/30 focus:border-blue-50"
+                        : "border-slate-50/30 focus:border-slate-50"
                     }
                   />
                 </motion.div>
@@ -100,7 +100,7 @@ export default function ContactSection() {
                     className={
                       theme === "light"
                         ? "border-primary/30 focus:border-primary"
-                        : "border-blue-50/30 focus:border-blue-50"
+                        : "border-slate-50/30 focus:border-slate-50"
                     }
                   />
                 </motion.div>
@@ -127,7 +127,7 @@ export default function ContactSection() {
                     className={
                       theme === "light"
                         ? "border-primary/30 focus:border-primary"
-                        : "border-blue-50/30 focus:border-blue-50"
+                        : "border-slate-50/30 focus:border-slate-50"
                     }
                   />
                 </motion.div>

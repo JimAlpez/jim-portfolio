@@ -86,7 +86,7 @@ const template = (item: any, i: number, theme: any) => {
         <h4 className="text-2xl font-bold">{item.title}</h4>
         <h5
           className={`text-lg italic font-medium ${
-            theme === "light" ? "text-primary/70" : "text-blue-50/70"
+            theme === "light" ? "text-primary/70" : "text-slate-50/70"
           }`}>
           {item.subTitle}
         </h5>

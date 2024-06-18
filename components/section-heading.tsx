@@ -47,7 +47,7 @@ export default function SectionHeading({
           }}
           viewport={{ once: true }}
           className={`text-5xl lg:text-7xl tracking-widest absolute top-1/2 left-1/2 ${
-            theme === "light" ? "text-blue-100/50" : "!text-sky-900/20"
+            theme === "light" ? "text-slate-200/50" : "!text-slate-900/20"
           }`}>
           {shadowText}
         </motion.span>

@@ -55,8 +55,8 @@ export default function SkillsSection() {
         viewport={{ once: true }}
         className={`m-1 p-6 rounded-xl shadow-lg border-t-2 ${
           theme === "light"
-            ? "shadow-blue-100/50 border-blue-100/30"
-            : "shadow-sky-900/30 border-sky-900/30"
+            ? "shadow-slate-100/50 border-slate-100/30"
+            : "shadow-slate-900/30 border-slate-900/30"
         }`}>
         <Slider {...settings}>
           {SKILLS_DATA.map((skill) => (

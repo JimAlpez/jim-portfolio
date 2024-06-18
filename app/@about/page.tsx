@@ -18,7 +18,7 @@ export default function AboutSection() {
 
   return (
     <Section sectionView="About" id="about">
-      <div className="flex items-start flex-col-reverse md:flex-row-reverse gap-10 px-4 py-20">
+      <div className="flex items-start flex-col-reverse md:flex-row gap-10 px-4 py-20">
         <div className="flex-1">
           <SectionHeading
             primaryText="About"
@@ -129,10 +129,10 @@ export default function AboutSection() {
               <a
                 href="CV.pdf"
                 download
-                className={`hover:scale-110 focus:scale-100 hover:shadow-lg hover:bg-secondary hover:text-blue-50 border-2 border-secondary transition-all font-medium px-5 py-3 rounded-full flex items-center gap-2 ${
+                className={`hover:scale-110 focus:scale-100 hover:shadow-lg hover:bg-secondary hover:text-slate-50 border-2 border-secondary transition-all font-medium px-5 py-3 rounded-full flex items-center gap-2 ${
                   theme === "light"
-                    ? "bg-primary text-blue-50"
-                    : "bg-blue-50 text-primary"
+                    ? "bg-primary text-slate-50"
+                    : "bg-slate-50 text-primary"
                 }`}>
                 Download CV
                 <AiOutlineDownload className="text-2xl animate-bounce" />
@@ -140,7 +140,7 @@ export default function AboutSection() {
             </motion.div>
           </div>
         </div>
-        <div className="md:mt-24 flex-1 h-full w-full grid place-items-center">
+        <div className="md:mt-20 flex-1 h-full w-full grid place-items-center">
           <div className="h-[20rem] w-full px-5">
             <ImageSlideshow />
           </div>
