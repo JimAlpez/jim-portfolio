@@ -8,7 +8,11 @@ const Hero = () => {
     <div className="container res-padding flex items-center flex-col-reverse sm:flex-row gap-y-12 gap-x-7 md:gap-10">
       <div className="w-full space-y-8 text-center sm:text-left">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold !leading-[1.2em]">
-          Hello, I'm Jim, Frontend Developer based in Philippines.
+          Hello,{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
+            I'm Jim
+          </span>
+          , Frontend Developer based in Philippines.
         </h1>
         <p>
           I am a Freelance frontend web developer with more than 2 years of
