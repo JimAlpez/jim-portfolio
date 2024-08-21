@@ -16,6 +16,7 @@ const Services = () => {
     swipeToSlide: false,
     autoplay: true,
     pauseOnHover: false,
+    arrows: false,
     slidesToShow: 6,
     slidesToScroll: 1,
     speed: 5000,
@@ -45,10 +46,10 @@ const Services = () => {
   };
 
   return (
-    <section id="services">
+    <section id="services" className="overflow-hidden pt-7">
       <div className="hidden sm:block h-24 w-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400"></div>
-      <div className="hidden sm:block -mt-20 h-20 -mx-2 px-5 bg-white shadow-lg border -rotate-3">
-        <div className="slider-container text-2xl font-bold mt-5">
+      <div className="hidden sm:block -mt-20 h-20 bg-white border shadow-md px-5 -mx-2 -rotate-3">
+        <div className="slider-container text-2xl font-bold mt-6">
           <Slider {...settings}>
             <div className="!flex items-center justify-center gap-5">
               <PiStarFourFill />
@@ -89,6 +90,7 @@ const Services = () => {
           </Slider>
         </div>
       </div>
+
       <div className="container res-padding flex justify-between flex-col sm:flex-row gap-y-12 sm:gap-y-0 sm:gap-x-8 md:gap-x-14 lg:gap-x-20">
         <div className="space-y-6 w-full">
           <Heading>Services I Am Providing</Heading>

@@ -8,8 +8,11 @@
 .res-padding {
   @apply py-12 sm:py-16 md:py-20 lg:py-28;
 }
+.accordion-item {
+  @apply bg-transparent;
+}
 .accordion-button {
-  @apply uppercase font-medium;
+  @apply uppercase font-medium !bg-transparent;
 }
 .accordion-button:not(.collapsed) {
   @apply bg-gradient-to-r from-indigo-200 via-purple-200 to-orange-200 !text-black;
