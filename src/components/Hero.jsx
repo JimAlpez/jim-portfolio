@@ -1,6 +1,7 @@
 import React from "react";
 
 import JimImage from "../assets/JimImage.png";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -14,12 +15,10 @@ const Hero = () => {
           experience.
         </p>
         <div className="flex justify-center items-center gap-5 flex-wrap">
-          <button className="w-full sm:w-auto text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black focus:shadow-none hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+          <Button className="bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
             Get in touch
-          </button>
-          <button className="w-full sm:w-auto text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black focus:shadow-none hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full border border-black">
-            View all works
-          </button>
+          </Button>
+          <Button className="border border-black">View all works</Button>
         </div>
       </div>
       <div className="w-full">
