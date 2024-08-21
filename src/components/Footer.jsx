@@ -14,7 +14,7 @@ const Footer = () => {
           <Heading className="w-full sm:w-3/4 sm:pr-5 !font-medium">
             Have An Awesome Project Idea? Let's Discuss
           </Heading>
-          <button className="font-medium text-lg w-40 h-40 grid place-content-center focus:shadow-none hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
+          <button className="font-bold text-lg w-40 h-40 grid place-content-center shadow-lg focus:shadow-none shadow-black/20 transition-all scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
             Start Project
           </button>
         </div>
@@ -43,13 +43,13 @@ const Footer = () => {
             <a
               href="#"
               target="_blank"
-              className="rounded-full border-2 border-l-indigo-500 border-y-purple-500 border-r-orange-500 w-10 h-10 grid place-content-center focus:shadow-none hover:shadow-md !shadow-black/20 transition-all hover:scale-105 focus:scale-100">
+              className="rounded-full border-2 border-l-blue-500 border-y-indigo-500 border-r-sky-500 w-10 h-10 grid place-content-center shadow-lg focus:shadow-none shadow-black/20 transition-all scale-105 focus:scale-100">
               <FaFacebookF className="text-lg" />
             </a>
             <a
               href="#"
               target="_blank"
-              className="rounded-full border-2 border-l-indigo-500 border-y-purple-500 border-r-orange-500 w-10 h-10 grid place-content-center focus:shadow-none hover:shadow-md !shadow-black/20 transition-all hover:scale-105 focus:scale-100">
+              className="rounded-full border-2 border-l-blue-500 border-y-indigo-500 border-r-sky-500 w-10 h-10 grid place-content-center shadow-lg focus:shadow-none shadow-black/20 transition-all scale-105 focus:scale-100">
               <FaLinkedinIn className="text-lg" />
             </a>
           </div>

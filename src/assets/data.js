@@ -1,3 +1,5 @@
+import ProjectImage1 from "/projects/Food-Ordering.png";
+
 export const navLinks = [
   {
     name: "Services",
@@ -98,5 +100,33 @@ export const servicesProvided = [
       "Integration of analytics and tracking tools for data-driven decisions.",
       "Social media integration and content marketing strategies.",
     ],
+  },
+];
+
+export const projectsList = [
+  {
+    title: "Food Ordering",
+    image: ProjectImage1,
+    category: "React, TailwindCss",
+  },
+  {
+    title: "Food Ordering",
+    image: ProjectImage1,
+    category: "React, TailwindCss",
+  },
+  {
+    title: "Food Ordering",
+    image: ProjectImage1,
+    category: "React, TailwindCss",
+  },
+  {
+    title: "Food Ordering",
+    image: ProjectImage1,
+    category: "React, TailwindCss",
+  },
+  {
+    title: "Food Ordering",
+    image: ProjectImage1,
+    category: "React, TailwindCss",
   },
 ];

@@ -26,7 +26,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-6">
-          <button className="text-sm uppercase font-medium text-white py-2 px-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
+          <button className="text-sm uppercase py-2 px-4 font-bold border border-black/20 shadow-lg focus:shadow-none shadow-black/20 transition-all scale-105 focus:scale-100 rounded-lg">
             Let's Talk
           </button>
 

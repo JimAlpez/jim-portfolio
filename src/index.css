@@ -15,5 +15,5 @@
   @apply uppercase font-medium !bg-transparent;
 }
 .accordion-button:not(.collapsed) {
-  @apply bg-gradient-to-r from-indigo-200 via-purple-200 to-orange-200 !text-black;
+  @apply bg-gradient-to-tl from-blue-200 via-indigo-200 to-sky-200 !text-black;
 }

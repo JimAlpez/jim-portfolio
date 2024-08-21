@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="w-full space-y-8 text-center sm:text-left">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold !leading-[1.2em]">
           Hello,{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-tl from-blue-500 via-indigo-500 to-sky-500">
             I'm Jim
           </span>
           , Frontend Developer based in Philippines.
@@ -19,10 +19,10 @@ const Hero = () => {
           experience.
         </p>
         <div className="flex justify-center items-center gap-5 flex-wrap">
-          <Button className="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
-            Get in touch
+          <Button className="bg-[#eaedf2]">Get in touch</Button>
+          <Button className="bg-gradient-to-tl from-blue-500 via-indigo-500 to-sky-500 text-white">
+            Hire Me
           </Button>
-          <Button className="border border-black">View all works</Button>
         </div>
       </div>
       <div className="w-full">

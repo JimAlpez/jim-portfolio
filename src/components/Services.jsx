@@ -6,13 +6,11 @@ import Slider from "react-slick";
 import "react-bootstrap-accordion/dist/index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Button from "./Button";
 import { PiStarFourFill } from "react-icons/pi";
-
 import { servicesSlider, servicesProvided } from "../assets/data";
 
 const Services = () => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     swipeToSlide: false,
@@ -49,7 +47,7 @@ const Services = () => {
 
   return (
     <section id="services" className="overflow-hidden pt-7">
-      <div className="hidden sm:block h-24 w-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400"></div>
+      <div className="hidden sm:block h-24 w-full bg-gradient-to-tl from-blue-500 via-indigo-500 to-sky-500"></div>
       <div className="hidden sm:block -mt-20 h-20 bg-white border shadow-md px-5 -mx-2 -rotate-3">
         <div className="slider-container text-2xl font-bold mt-6">
           <Slider {...settings}>
@@ -58,7 +56,7 @@ const Services = () => {
                 <div
                   key={index}
                   className="!flex items-center justify-center gap-5">
-                  <PiStarFourFill />
+                  <PiStarFourFill className="text-blue-500" />
                   <h3>{item.name}</h3>
                 </div>
               );
@@ -76,11 +74,6 @@ const Services = () => {
             revisions, so you can achieve the best possible website for your
             needs.
           </p>
-          <div className="pt-5">
-            <Button className="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
-              Get in touch
-            </Button>
-          </div>
         </div>
         <div className="w-full space-y-6">
           {servicesProvided.map((item, index) => {
