@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-5xl mx-auto px-6;
+}
+.res-padding {
+  @apply py-12 sm:py-16 md:py-20 lg:py-28;
+}
+.accordion-button {
+  @apply uppercase font-medium;
+}
+.accordion-button:not(.collapsed) {
+  @apply bg-gradient-to-r from-indigo-200 via-purple-200 to-orange-200 !text-black;
+}

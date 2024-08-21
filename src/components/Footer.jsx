@@ -1,0 +1,51 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import Heading from "./Heading";
+
+const Footer = () => {
+  return (
+    <footer>
+      <div className="bg-black text-white">
+        <div className="container res-padding flex items-center justify-between flex-col sm:flex-row gap-y-8 text-center sm:text-left">
+          <Heading className="w-full sm:w-3/4 sm:pr-5 !font-medium">
+            Have An Awesome Project Idea? Let's Discuss
+          </Heading>
+          <Link className="font-medium text-lg w-40 h-40 grid place-content-center rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+            Start Project
+          </Link>
+        </div>
+      </div>
+      <div className="container res-padding flex items-start justify-between gap-x-5 gap-y-10  flex-col sm:flex-row text-center sm:text-left">
+        <div className="space-y-5 w-full">
+          <Link to="/" className="text-3xl font-bold">
+            Alpez<span className="text-xs">.site</span>
+          </Link>
+          <p>
+            I am a Freelance frontend web developer with more than 2 years of
+            experience.
+          </p>
+        </div>
+        <div className="space-y-5 w-full">
+          <ul className=" flex items-center justify-center sm:justify-end gap-10">
+            <Link to="/">Home</Link>
+            <Link to="/about">About Me</Link>
+            <Link to="/contact">Contact</Link>
+          </ul>
+          <div className="flex items-center justify-center sm:justify-end gap-5">
+            <Link className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center">
+              <FaFacebookF className="text-lg" />
+            </Link>
+            <Link className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center">
+              <FaLinkedinIn className="text-lg" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
