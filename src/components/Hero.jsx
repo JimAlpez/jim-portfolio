@@ -15,7 +15,7 @@ const Hero = () => {
           experience.
         </p>
         <div className="flex justify-center items-center gap-5 flex-wrap">
-          <Button className="bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+          <Button className="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
             Get in touch
           </Button>
           <Button className="border border-black">View all works</Button>

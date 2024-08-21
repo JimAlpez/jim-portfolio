@@ -13,7 +13,7 @@ const Footer = () => {
           <Heading className="w-full sm:w-3/4 sm:pr-5 !font-medium">
             Have An Awesome Project Idea? Let's Discuss
           </Heading>
-          <button className="font-medium text-lg w-40 h-40 grid place-content-center rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+          <button className="font-medium text-lg w-40 h-40 grid place-content-center focus:shadow-none hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
             Start Project
           </button>
         </div>

@@ -99,7 +99,7 @@ const Services = () => {
             needs.
           </p>
           <div className="pt-5">
-            <Button className="bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+            <Button className="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
               Get in touch
             </Button>
           </div>
