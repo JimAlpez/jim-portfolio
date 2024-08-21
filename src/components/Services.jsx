@@ -100,7 +100,7 @@ const Services = () => {
           <div className="pt-5">
             <a
               href="#"
-              className="text-sm md:text-base lg:text-lg py-2 px-4 md:py-3 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+              className="text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
               Get in touch
             </a>
           </div>

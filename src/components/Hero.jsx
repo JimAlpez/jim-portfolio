@@ -16,12 +16,12 @@ const Hero = () => {
         <div className="text-center space-x-3">
           <a
             href="#"
-            className="whitespace-nowrap text-sm md:text-base lg:text-lg py-2 px-4 md:py-3 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+            className="whitespace-nowrap text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
             Get in touch
           </a>
           <a
             href="#"
-            className="whitespace-nowrap text-sm md:text-base lg:text-lg py-2 px-4 md:py-3 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full border border-black">
+            className="whitespace-nowrap text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full border border-black">
             View all workds
           </a>
         </div>
