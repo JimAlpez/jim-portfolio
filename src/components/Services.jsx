@@ -98,7 +98,7 @@ const Services = () => {
             needs.
           </p>
           <div className="pt-5">
-            <button className="w-full sm:w-auto text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+            <button className="w-full sm:w-auto text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black focus:shadow-none hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
               Get in touch
             </button>
           </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-6">
-          <button className="text-sm uppercase font-medium text-black py-2 px-4 shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+          <button className="text-sm uppercase font-medium text-black py-2 px-4 focus:shadow-none hover:shadow-md !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
             Let's Talk
           </button>
 

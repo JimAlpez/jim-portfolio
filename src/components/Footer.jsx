@@ -38,13 +38,13 @@ const Footer = () => {
             <a
               href="#"
               target="_blank"
-              className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100">
+              className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center focus:shadow-none hover:shadow-md !shadow-black/50 transition-all hover:scale-105 focus:scale-100">
               <FaFacebookF className="text-lg" />
             </a>
             <a
               href="#"
               target="_blank"
-              className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100">
+              className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center focus:shadow-none hover:shadow-md !shadow-black/50 transition-all hover:scale-105 focus:scale-100">
               <FaLinkedinIn className="text-lg" />
             </a>
           </div>
