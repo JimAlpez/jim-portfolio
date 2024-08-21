@@ -6,8 +6,10 @@ import Slider from "react-slick";
 import "react-bootstrap-accordion/dist/index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { PiStarFourFill } from "react-icons/pi";
 import Button from "./Button";
+import { PiStarFourFill } from "react-icons/pi";
+
+import { servicesSlider, servicesProvided } from "../assets/data";
 
 const Services = () => {
   var settings = {
@@ -51,42 +53,16 @@ const Services = () => {
       <div className="hidden sm:block -mt-20 h-20 bg-white border shadow-md px-5 -mx-2 -rotate-3">
         <div className="slider-container text-2xl font-bold mt-6">
           <Slider {...settings}>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>Maintenance</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>Updates</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>E-commerce</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>SEO</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>Hosting</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>Domain</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>Managing</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>Development</h3>
-            </div>
-            <div className="!flex items-center justify-center gap-5">
-              <PiStarFourFill />
-              <h3>Custom</h3>
-            </div>
+            {servicesSlider.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className="!flex items-center justify-center gap-5">
+                  <PiStarFourFill />
+                  <h3>{item.name}</h3>
+                </div>
+              );
+            })}
           </Slider>
         </div>
       </div>
@@ -107,68 +83,17 @@ const Services = () => {
           </div>
         </div>
         <div className="w-full space-y-6">
-          <Accordion title="Custom Website Design & Development">
-            <ul className="list-disc pl-4 space-y-4">
-              <li>
-                Design and build fully customized websites tailored to your
-                brand’s needs.
-              </li>
-              <li>
-                Responsive design ensuring seamless experience across all
-                devices.
-              </li>
-              <li>
-                Use of modern frameworks and technologies like WordPress, React,
-                and more.
-              </li>
-            </ul>
-          </Accordion>
-          <Accordion title="Web Hosting and Domain Management">
-            <ul className="list-disc pl-4 space-y-4">
-              <li>Assistance with selecting the right hosting solution.</li>
-              <li>Domain registration and management.</li>
-              <li>Setup of SSL certificates and website security features.</li>
-            </ul>
-          </Accordion>
-          <Accordion title="Maintenance and Support">
-            <ul className="list-disc pl-4 space-y-4">
-              <li>
-                Regular updates to keep your website secure and running
-                smoothly.
-              </li>
-              <li>Content updates, bug fixes, and feature enhancements.</li>
-              <li>Performance optimization and SEO improvements.</li>
-            </ul>
-          </Accordion>
-          <Accordion title="Content Management Systems (CMS)">
-            <ul className="list-disc pl-4 space-y-4">
-              <li>
-                Expertise in WordPress, Joomla, Drupal, and other CMS platforms.{" "}
-              </li>
-              <li>
-                Creation of user-friendly interfaces for easy content
-                management.
-              </li>
-              <li>
-                Plugin development and customization for added functionality.
-              </li>
-            </ul>
-          </Accordion>
-          <Accordion title="SEO and Digital Marketing">
-            <ul className="list-disc pl-4 space-y-4">
-              <li>
-                On-page and off-page SEO strategies to increase visibility in
-                search engines.
-              </li>
-              <li>
-                Integration of analytics and tracking tools for data-driven
-                decisions.
-              </li>
-              <li>
-                Social media integration and content marketing strategies.
-              </li>
-            </ul>
-          </Accordion>
+          {servicesProvided.map((item, index) => {
+            return (
+              <Accordion key={index} title={item.title}>
+                <ul className="list-disc pl-4 space-y-4">
+                  {item.lists.map((list, indexList) => {
+                    return <li key={indexList}>{list}</li>;
+                  })}
+                </ul>
+              </Accordion>
+            );
+          })}
         </div>
       </div>
     </section>

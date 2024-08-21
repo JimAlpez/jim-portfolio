@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
 
+import { navLinks } from "../assets/data";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,15 +16,13 @@ const Navbar = () => {
         <nav className="text-sm hidden sm:block">
           <ul className="flex items-center gap-8">
             <Link to="/">Home</Link>
-            <AnchorLink offset={50} href="#services">
-              Services
-            </AnchorLink>
-            <AnchorLink offset={50} href="#projects">
-              Projects
-            </AnchorLink>
-            <AnchorLink offset={50} href="#testimonials">
-              Testimonials
-            </AnchorLink>
+            {navLinks.map((item, index) => {
+              return (
+                <AnchorLink offset={50} key={index} href={item.link}>
+                  {item.name}
+                </AnchorLink>
+              );
+            })}
           </ul>
         </nav>
         <div className="flex items-center gap-6">
@@ -41,15 +41,13 @@ const Navbar = () => {
         }`}>
         <ul className="flex flex-col gap-2 py-4 px-6">
           <Link to="/">Home</Link>
-          <AnchorLink offset={50} href="#services">
-            Services
-          </AnchorLink>
-          <AnchorLink offset={50} href="#projects">
-            Projects
-          </AnchorLink>
-          <AnchorLink offset={50} href="#testimonials">
-            Testimonials
-          </AnchorLink>
+          {navLinks.map((item, index) => {
+            return (
+              <AnchorLink offset={50} key={index} href={item.link}>
+                {item.name}
+              </AnchorLink>
+            );
+          })}
         </ul>
       </nav>
     </>

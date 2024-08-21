@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Heading from "./Heading";
+import { footerLinks } from "../assets/data";
 
 const Footer = () => {
   return (
@@ -30,9 +31,13 @@ const Footer = () => {
         </div>
         <div className="space-y-5 w-full">
           <ul className=" flex items-center justify-center sm:justify-end gap-10">
-            <Link to="/">Home</Link>
-            <Link to="/about">About Me</Link>
-            <Link to="/contact">Contact</Link>
+            {footerLinks.map((item, index) => {
+              return (
+                <Link key={index} to={item.link}>
+                  {item.name}
+                </Link>
+              );
+            })}
           </ul>
           <div className="flex items-center justify-center sm:justify-end gap-5">
             <a

@@ -1,6 +1,6 @@
 import React from "react";
 
-import JimImage from "../assets/JimImage.png";
+import JimImage from "/JimImage.png";
 import Button from "./Button";
 
 const Hero = () => {
