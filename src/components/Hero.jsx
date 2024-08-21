@@ -13,21 +13,17 @@ const Hero = () => {
           I am a Freelance frontend web developer with more than 2 years of
           experience.
         </p>
-        <div className="text-center space-x-3">
-          <a
-            href="#"
-            className="whitespace-nowrap text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+        <div className="flex justify-center items-center gap-5 flex-wrap">
+          <button className="w-full sm:w-auto text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
             Get in touch
-          </a>
-          <a
-            href="#"
-            className="whitespace-nowrap text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black rounded-full border border-black">
-            View all workds
-          </a>
+          </button>
+          <button className="w-full sm:w-auto text-base lg:text-lg py-3 px-4 md:px-5 lg:px-7 uppercase font-medium text-black shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100 rounded-full border border-black">
+            View all works
+          </button>
         </div>
       </div>
       <div className="w-full">
-        <img className="w-4/5 mx-auto" src={JimImage} alt="Jim Alpez" />
+        <img className="w-11/12 mx-auto" src={JimImage} alt="Jim Alpez" />
       </div>
     </div>
   );

@@ -13,9 +13,9 @@ const Footer = () => {
           <Heading className="w-full sm:w-3/4 sm:pr-5 !font-medium">
             Have An Awesome Project Idea? Let's Discuss
           </Heading>
-          <Link className="font-medium text-lg w-40 h-40 grid place-content-center rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
+          <button className="font-medium text-lg w-40 h-40 grid place-content-center rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-orange-400">
             Start Project
-          </Link>
+          </button>
         </div>
       </div>
       <div className="container res-padding flex items-start justify-between gap-x-5 gap-y-10  flex-col sm:flex-row text-center sm:text-left">
@@ -35,12 +35,18 @@ const Footer = () => {
             <Link to="/contact">Contact</Link>
           </ul>
           <div className="flex items-center justify-center sm:justify-end gap-5">
-            <Link className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center">
+            <a
+              href="#"
+              target="_blank"
+              className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100">
               <FaFacebookF className="text-lg" />
-            </Link>
-            <Link className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center">
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              className="rounded-full border-2 border-purple-400 w-10 h-10 grid place-content-center shadow focus:shadow hover:shadow-lg !shadow-black/50 transition-all hover:scale-105 focus:scale-100">
               <FaLinkedinIn className="text-lg" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
