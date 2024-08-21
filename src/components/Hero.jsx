@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="container res-padding flex items-center flex-col-reverse sm:flex-row gap-y-12 gap-x-7 md:gap-10">
       <div className="w-full space-y-8 text-center sm:text-left">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold !leading-[1.2em]">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold !leading-[1.2em]">
           Hello, I'm Jim, Frontend Developer based in Philippines.
         </h1>
         <p>
