@@ -9,12 +9,12 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="backdrop-blur-md bg-white/30 py-5 container flex items-center justify-between sticky top-0 sm:top-4 left-0 z-10 sm:rounded-xl sm:border shadow-lg shadow-black/50">
+      <header className="backdrop-blur-md bg-white/30 py-5 sm:w-[95%] container flex items-center justify-between sticky top-0 sm:top-4 left-0 z-10 sm:rounded-xl sm:border shadow-lg shadow-black/20">
         <Link to="/" className="text-3xl font-bold">
           Alpez<span className="text-xs">.site</span>
         </Link>
         <nav className="text-sm hidden sm:block">
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-8 font-medium">
             <Link to="/">Home</Link>
             {navLinks.map((item, index) => {
               return (
@@ -39,7 +39,7 @@ const Navbar = () => {
         className={`sm:hidden z-10 backdrop-blur-md bg-white/30 shadow shadow-black/50 fixed top-[76px] right-0 bottom-0 w-52 transition-all duration-500 ease-in-out ${
           isOpen ? "mr-0" : "-mr-52"
         }`}>
-        <ul className="flex flex-col gap-2 py-4 px-6">
+        <ul className="flex flex-col gap-3 py-4 px-6 font-medium">
           <Link to="/">Home</Link>
           {navLinks.map((item, index) => {
             return (
